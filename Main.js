@@ -60,7 +60,19 @@
 })();
 
 
-/* ── Staggered reveal for grids ───────────────────────────── */
+/* ── Projects show more / less ────────────────────────────── */
+function toggleProjects() {
+  const extras  = document.querySelectorAll('.project-extra');
+  const btn     = document.getElementById('toggle-projects');
+  const arrow   = document.getElementById('toggle-arrow');
+  const expanded = extras[0].classList.contains('visible');
+
+  extras.forEach((el) => el.classList.toggle('visible', !expanded));
+  btn.textContent  = expanded ? 'Show more projects ' : 'Show fewer projects ';
+  btn.appendChild(arrow);
+  arrow.textContent = expanded ? '↓' : '↑';
+}
+
 (function () {
   const grids = document.querySelectorAll('.skills-grid, .projects-grid');
   grids.forEach((grid) => {
