@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ✏️ UPDATE: Your name & meta description -->
-  <title>Esha — Software Engineer, AI & NLP</title>
+  <title>Esha — Software Engineer | AI Engineer</title>
   <meta name="description" content="Software Engineer" />
 
   <!-- Fonts -->
@@ -24,7 +24,7 @@
     <div class="nav-inner">
 
       <!-- ✏️ UPDATE: Your initials or short name -->
-      <span class="nav-logo">E<span class="accent">.</span></span>
+      <span class="nav-logo">Esha<span class="accent">.</span></span>
 
       <ul class="nav-links">
         <li><a href="#summary" class="nav-link active" data-tab="summary">Summary</a></li>
@@ -34,7 +34,7 @@
       </ul>
 
       <!-- ✏️ UPDATE: Your resume link or remove this button -->
-      <a class="btn-resume" href="resume.pdf" target="_blank">Resume ↗</a>
+      <!-- <a class="btn-resume" href="resume.pdf" target="_blank">Resume ↗</a> -->
 
     </div>
   </nav>
@@ -53,25 +53,24 @@
         <h1 class="hero-name">Esha<span class="accent">.</span></h1>
 
         <!-- ✏️ UPDATE: Your one-line role -->
-        <p class="hero-role">Software Engineer <span class="divider">/</span> NLP & LLM Specialist</p>
+        <p class="hero-role">Software Engineer <span class="divider">/</span> AI Engineer</p>
 
         <!-- ✏️ UPDATE: Your 2–3 sentence bio -->
         <p class="hero-bio">
-          I build systems that make language models actually useful — from fine-tuning and evaluation
-          to production-grade NLP pipelines. Obsessed with the gap between research and real-world
-          deployment, and relentlessly closing it.
+          I build intelligent systems that solve real problems - from machine learning models that detect anomalies and threats, to AI-driven pipelines that scale across millions of users. 
+          Passionate about turning cutting-edge AI into production-grade software, and relentlessly focused on making it work in the real world.
         </p>
 
         <div class="hero-cta">
           <!-- ✏️ UPDATE: Your email -->
-          <a class="btn-primary" href="mailto:esha@example.com">Get in touch</a>
+          <a class="btn-primary" href="mailto:singhesha116@gmail.com">Get in touch</a>
 
           <!-- ✏️ UPDATE: Your LinkedIn / GitHub -->
           <div class="hero-socials">
-            <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub" class="social-icon">
+            <a href="https://github.com/esingh7" target="_blank" aria-label="GitHub" class="social-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
-            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <a href="https://linkedin.com/in/eshasingh150" target="_blank" aria-label="LinkedIn" class="social-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
           </div>
@@ -86,20 +85,22 @@
             <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
             <span class="terminal-title">nlp_pipeline.py</span>
           </div>
-          <pre class="terminal-code"><span class="t-purple">from</span> transformers <span class="t-purple">import</span> AutoModel
-<span class="t-purple">import</span> torch
+          <pre class="terminal-code"><span class="t-purple">import</span> openai, google.generativeai <span class="t-purple">as</span> genai
 
-<span class="t-comment"># ✏️ update with your stack</span>
-model = AutoModel.from_pretrained(
-    <span class="t-green">"esha/fine-tuned-llm"</span>
-)
-
-outputs = model.generate(
-    input_ids,
-    max_new_tokens=<span class="t-amber">512</span>,
-    temperature=<span class="t-amber">0.7</span>,
-)
-<span class="t-comment"># → deployed at scale ✓</span></pre>
+          <span class="t-comment"># OpenAI</span>
+          oai = openai.OpenAI()
+          oai.chat.completions.create(
+              model=<span class="t-green">"gpt-4o"</span>,
+              messages=messages,
+          )
+          
+          <span class="t-comment"># Gemini</span>
+          genai.configure(api_key=API_KEY)
+          model = genai.GenerativeModel(
+              <span class="t-green">"gemini-1.5-pro"</span>
+          )
+          model.generate_content(prompt)</pre>
+          <span class="t-comment"># → deployed at scale ✓</span></pre>
         </div>
       </div>
 
@@ -107,9 +108,9 @@ outputs = model.generate(
 
     <div class="hero-stats">
       <!-- ✏️ UPDATE: Your real numbers -->
-      <div class="stat"><span class="stat-num">3<span class="accent">+</span></span><span class="stat-label">Years in AI</span></div>
+      <div class="stat"><span class="stat-num">6<span class="accent">+</span></span><span class="stat-label">Years in AI</span></div>
       <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">10<span class="accent">+</span></span><span class="stat-label">Models Shipped</span></div>
+      <div class="stat"><span class="stat-num">5<span class="accent">+</span></span><span class="stat-label">Models Shipped</span></div>
       <div class="stat-divider"></div>
       <div class="stat"><span class="stat-num">5<span class="accent">+</span></span><span class="stat-label">LLM Projects</span></div>
     </div>
@@ -119,86 +120,77 @@ outputs = model.generate(
   <!-- ======================================================
        SKILLS
   ====================================================== -->
-  <section class="section" id="skills">
+   <section class="section" id="skills">
     <div class="section-inner">
       <div class="section-header">
         <span class="section-tag">02 / Skills</span>
         <h2 class="section-title">What I work with</h2>
       </div>
-
+ 
       <div class="skills-grid">
-
-        <!-- ✏️ UPDATE: Add/remove/rename skill categories and tags -->
-        <div class="skill-card">
-          <div class="skill-card-icon">⬡</div>
-          <h3 class="skill-card-title">NLP & LLMs</h3>
-          <div class="skill-tags">
-            <span class="tag">Transformers</span>
-            <span class="tag">Fine-tuning</span>
-            <span class="tag">RAG</span>
-            <span class="tag">Prompt Engineering</span>
-            <span class="tag">RLHF</span>
-            <span class="tag">Embeddings</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-card-icon">◈</div>
-          <h3 class="skill-card-title">ML Engineering</h3>
-          <div class="skill-tags">
-            <span class="tag">PyTorch</span>
-            <span class="tag">HuggingFace</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">ONNX</span>
-          </div>
-        </div>
-
+ 
         <div class="skill-card">
           <div class="skill-card-icon">◎</div>
           <h3 class="skill-card-title">Languages</h3>
           <div class="skill-tags">
             <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C#</span>
+            <span class="tag">C</span>
             <span class="tag">SQL</span>
-            <span class="tag">Bash</span>
             <span class="tag">JavaScript</span>
           </div>
         </div>
-
+ 
+        <div class="skill-card">
+          <div class="skill-card-icon">⬡</div>
+          <h3 class="skill-card-title">AI Frameworks & Agents</h3>
+          <div class="skill-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">OpenAI Agent SDK</span>
+            <span class="tag">CrewAI</span>
+            <span class="tag">AutoGen</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-card-icon">◈</div>
+          <h3 class="skill-card-title">Machine Learning & Data</h3>
+          <div class="skill-tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Weka</span>
+            <span class="tag">Tableau</span>
+          </div>
+        </div>
+ 
         <div class="skill-card">
           <div class="skill-card-icon">⬟</div>
-          <h3 class="skill-card-title">Infrastructure</h3>
+          <h3 class="skill-card-title">Cloud & DevOps</h3>
           <div class="skill-tags">
+            <span class="tag">Azure</span>
             <span class="tag">AWS</span>
             <span class="tag">Docker</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">MLflow</span>
+            <span class="tag">Git / BitBucket</span>
+            <span class="tag">Jira</span>
           </div>
         </div>
-
-        <div class="skill-card">
-          <div class="skill-card-icon">◇</div>
-          <h3 class="skill-card-title">Evaluation & Safety</h3>
-          <div class="skill-tags">
-            <span class="tag">BLEU / ROUGE</span>
-            <span class="tag">LLM-as-Judge</span>
-            <span class="tag">Red-teaming</span>
-            <span class="tag">Benchmarking</span>
-          </div>
-        </div>
-
+ 
         <div class="skill-card">
           <div class="skill-card-icon">△</div>
-          <h3 class="skill-card-title">Tools & Workflow</h3>
+          <h3 class="skill-card-title">Software Engineering</h3>
           <div class="skill-tags">
-            <span class="tag">Git</span>
-            <span class="tag">Weights & Biases</span>
-            <span class="tag">Jupyter</span>
-            <span class="tag">VS Code</span>
+            <span class="tag">OOP</span>
+            <span class="tag">REST Services</span>
+            <span class="tag">Agile</span>
+            <span class="tag">IntelliJ</span>
+            <span class="tag">JUnit</span>
+            <span class="tag">Mockito</span>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
