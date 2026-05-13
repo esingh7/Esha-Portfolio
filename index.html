@@ -6,7 +6,7 @@
 
   <!-- ✏️ UPDATE: Your name & meta description -->
   <title>Esha — Software Engineer | AI Engineer</title>
-  <meta name="description" content="Software Engineer" />
+  <meta name="description" content="Software Engineer and AI Engineer building intelligent systems at scale." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,17 +55,14 @@
         <!-- ✏️ UPDATE: Your one-line role -->
         <p class="hero-role">Software Engineer <span class="divider">/</span> AI Engineer</p>
 
-        <!-- ✏️ UPDATE: Your 2–3 sentence bio -->
         <p class="hero-bio">
-          I build intelligent systems that solve real problems - from machine learning models that detect anomalies and threats, to AI-driven pipelines that scale across millions of users. 
+          I build intelligent systems that solve real problems — from machine learning models that detect anomalies and threats, to AI-driven pipelines that scale across millions of users.
           Passionate about turning cutting-edge AI into production-grade software, and relentlessly focused on making it work in the real world.
         </p>
 
         <div class="hero-cta">
-          <!-- ✏️ UPDATE: Your email -->
           <a class="btn-primary" href="mailto:singhesha116@gmail.com">Get in touch</a>
 
-          <!-- ✏️ UPDATE: Your LinkedIn / GitHub -->
           <div class="hero-socials">
             <a href="https://github.com/esingh7" target="_blank" aria-label="GitHub" class="social-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -85,22 +82,20 @@
             <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
             <span class="terminal-title">nlp_pipeline.py</span>
           </div>
-          <pre class="terminal-code"><span class="t-purple">import</span> openai, google.generativeai <span class="t-purple">as</span> genai
+          <pre class="terminal-code"><span class="t-purple">from</span> transformers <span class="t-purple">import</span> AutoModel
+<span class="t-purple">import</span> torch
 
-          <span class="t-comment"># OpenAI</span>
-          oai = openai.OpenAI()
-          oai.chat.completions.create(
-              model=<span class="t-green">"gpt-4o"</span>,
-              messages=messages,
-          )
-          
-          <span class="t-comment"># Gemini</span>
-          genai.configure(api_key=API_KEY)
-          model = genai.GenerativeModel(
-              <span class="t-green">"gemini-1.5-pro"</span>
-          )
-          model.generate_content(prompt)</pre>
-          <span class="t-comment"># → deployed at scale ✓</span></pre>
+<span class="t-comment"># ✏️ update with your stack</span>
+model = AutoModel.from_pretrained(
+    <span class="t-green">"esha/fine-tuned-llm"</span>
+)
+
+outputs = model.generate(
+    input_ids,
+    max_new_tokens=<span class="t-amber">512</span>,
+    temperature=<span class="t-amber">0.7</span>,
+)
+<span class="t-comment"># → deployed at scale ✓</span></pre>
         </div>
       </div>
 
@@ -120,15 +115,15 @@
   <!-- ======================================================
        SKILLS
   ====================================================== -->
-   <section class="section" id="skills">
+  <section class="section" id="skills">
     <div class="section-inner">
       <div class="section-header">
         <span class="section-tag">02 / Skills</span>
         <h2 class="section-title">What I work with</h2>
       </div>
- 
+
       <div class="skills-grid">
- 
+
         <div class="skill-card">
           <div class="skill-card-icon">◎</div>
           <h3 class="skill-card-title">Languages</h3>
@@ -141,7 +136,7 @@
             <span class="tag">JavaScript</span>
           </div>
         </div>
- 
+
         <div class="skill-card">
           <div class="skill-card-icon">⬡</div>
           <h3 class="skill-card-title">AI Frameworks & Agents</h3>
@@ -153,7 +148,7 @@
             <span class="tag">AutoGen</span>
           </div>
         </div>
- 
+
         <div class="skill-card">
           <div class="skill-card-icon">◈</div>
           <h3 class="skill-card-title">Machine Learning & Data</h3>
@@ -165,7 +160,7 @@
             <span class="tag">Tableau</span>
           </div>
         </div>
- 
+
         <div class="skill-card">
           <div class="skill-card-icon">⬟</div>
           <h3 class="skill-card-title">Cloud & DevOps</h3>
@@ -177,7 +172,7 @@
             <span class="tag">Jira</span>
           </div>
         </div>
- 
+
         <div class="skill-card">
           <div class="skill-card-icon">△</div>
           <h3 class="skill-card-title">Software Engineering</h3>
@@ -190,7 +185,7 @@
             <span class="tag">Mockito</span>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
@@ -206,76 +201,188 @@
         <h2 class="section-title">Things I've built</h2>
       </div>
 
-      <div class="projects-grid">
+      <div class="projects-grid" id="projects-grid">
 
-        <!-- ✏️ UPDATE: Replace with your real projects -->
-
-        <article class="project-card featured">
+        <article class="project-card">
           <div class="project-meta">
-            <span class="project-tag">LLM · Fine-tuning</span>
-            <span class="project-year">2024</span>
+            <span class="project-tag">IoT · Embedded Systems</span>
           </div>
-          <h3 class="project-title">Domain-Adapted LLM for Legal QA</h3>
+          <h3 class="project-title">Smart Cage System</h3>
           <p class="project-desc">
-            Fine-tuned a 7B parameter model on a corpus of legal documents using LoRA adapters,
-            achieving a 34% improvement on domain-specific benchmarks over the base model.
-            Deployed via FastAPI with streaming inference.
+            Built an IoT system to monitor animals in a smart cage for tracking animal position
+            and behavior wirelessly. Designed and developed a UI for an embedded system to
+            control power and neuromodulation of animals.
           </p>
           <div class="project-stack">
-            <span>PyTorch</span><span>LoRA</span><span>FastAPI</span><span>AWS</span>
+            <span>Java</span><span>Raspberry Pi</span><span>Linux</span>
           </div>
-          <!-- ✏️ UPDATE: link to your project -->
-          <a href="https://github.com/YOUR_USERNAME/project" target="_blank" class="project-link">View project ↗</a>
         </article>
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="project-tag">RAG · Embeddings</span>
-            <span class="project-year">2024</span>
+            <span class="project-tag">NLP · Information Extraction</span>
           </div>
-          <h3 class="project-title">Semantic Search Engine</h3>
+          <h3 class="project-title">Coreference Resolution</h3>
           <p class="project-desc">
-            Built a retrieval-augmented generation pipeline over 500k+ internal documents,
-            reducing hallucinations by 60% and cutting average query time to under 2 seconds.
+            Implemented rule-based and machine learning coreference resolution. Captured
+            relations between markables for information extraction in news articles and fairy tales.
           </p>
           <div class="project-stack">
-            <span>LangChain</span><span>Pinecone</span><span>OpenAI</span>
+            <span>Python</span><span>Scikit-Learn</span><span>PyTorch</span>
           </div>
-          <a href="https://github.com/YOUR_USERNAME/project" target="_blank" class="project-link">View project ↗</a>
         </article>
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="project-tag">NLP · Classification</span>
-            <span class="project-year">2023</span>
+            <span class="project-tag">Robotics · Computer Vision</span>
           </div>
-          <h3 class="project-title">Multilingual Sentiment Classifier</h3>
+          <h3 class="project-title">Autonomous Warehouse</h3>
           <p class="project-desc">
-            Trained a multilingual BERT model on 12 languages for customer feedback analysis.
-            Shipped as a REST API serving 50k+ predictions per day in production.
+            Two Cozmos collaborated to manage a warehouse autonomously, delivering boxes from
+            a pickup zone to a storage zone through a relay zone.
           </p>
           <div class="project-stack">
-            <span>HuggingFace</span><span>mBERT</span><span>Docker</span>
+            <span>OpenCV</span><span>Cozmo</span>
           </div>
-          <a href="https://github.com/YOUR_USERNAME/project" target="_blank" class="project-link">View project ↗</a>
         </article>
 
         <article class="project-card">
           <div class="project-meta">
-            <span class="project-tag">Evaluation · Safety</span>
-            <span class="project-year">2023</span>
+            <span class="project-tag">NLP · Deep Learning</span>
           </div>
-          <h3 class="project-title">LLM Evaluation Framework</h3>
+          <h3 class="project-title">Deep Transition Dependency Parser</h3>
           <p class="project-desc">
-            Open-source framework for evaluating LLMs across factuality, safety, and instruction-following,
-            with automated red-teaming and dashboard visualisation.
+            Implemented an arc-standard transition-based dependency parser and trained a
+            network to parse English and Norwegian sentences.
           </p>
           <div class="project-stack">
-            <span>Python</span><span>W&amp;B</span><span>GPT-4</span>
+            <span>Python</span><span>PyTorch</span>
           </div>
-          <a href="https://github.com/YOUR_USERNAME/project" target="_blank" class="project-link">View project ↗</a>
         </article>
 
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">ML · Predictive Modelling</span>
+          </div>
+          <h3 class="project-title">Predictive Modelling</h3>
+          <p class="project-desc">
+            Built models using Decision Trees, Random Forests, Neural Networks, and Boosting
+            to predict which customers would sign contracts, enabling prioritization of likely renewals.
+          </p>
+          <div class="project-stack">
+            <span>R</span><span>Weka</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-tag">Computer Vision</span>
+          </div>
+          <h3 class="project-title">Sleep Detect</h3>
+          <p class="project-desc">
+            An application that helped students study at night by tracking eye movement
+            and triggering an alarm when sleep was detected.
+          </p>
+          <div class="project-stack">
+            <span>OpenCV</span>
+          </div>
+        </article>
+
+        <!-- hidden by default -->
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">ML · Unsupervised Learning</span>
+          </div>
+          <h3 class="project-title">Unsupervised Learning</h3>
+          <p class="project-desc">
+            Implemented clustering algorithms (k-means, EM) and dimensionality reduction
+            techniques (PCA, ICA, Randomized Projections) and evaluated their performance
+            on UCI Repository datasets.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>Scikit-Learn</span>
+          </div>
+        </article>
+
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">ML · Supervised Learning</span>
+          </div>
+          <h3 class="project-title">Supervised Learning</h3>
+          <p class="project-desc">
+            Compared performance of supervised learning algorithms — decision trees, boosting,
+            SVMs, k-NN, and neural networks — across classification datasets.
+          </p>
+          <div class="project-stack">
+            <span>Scikit-Learn</span><span>Weka</span>
+          </div>
+        </article>
+
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">ML · Reinforcement Learning</span>
+          </div>
+          <h3 class="project-title">Reinforcement Learning</h3>
+          <p class="project-desc">
+            Ran Value Iteration and Policy Iteration on two MDPs and evaluated performance
+            by comparing iterations, convergence time, and convergence values.
+          </p>
+          <div class="project-stack">
+            <span>Python</span>
+          </div>
+        </article>
+
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">Full Stack · Database</span>
+          </div>
+          <h3 class="project-title">Trainian</h3>
+          <p class="project-desc">
+            An online system for buying train tickets using classical database development
+            methodology, implemented with a relational DBMS supporting standard SQL queries.
+          </p>
+          <div class="project-stack">
+            <span>Java</span><span>MySQL</span><span>PHPMyAdmin</span><span>JavaFX</span>
+          </div>
+          <a href="https://github.com/esingh7/Trainian" target="_blank" class="project-link">View project ↗</a>
+        </article>
+
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">Mobile · Android</span>
+          </div>
+          <h3 class="project-title">Mobster</h3>
+          <p class="project-desc">
+            An Android crowdsourcing app based on the idea of ochlosophia, allowing users
+            to give and ask for advice anonymously.
+          </p>
+          <div class="project-stack">
+            <span>Android Studio</span><span>Firebase</span><span>Google Places API</span>
+          </div>
+          <a href="https://github.com/makoto0610/Mobster" target="_blank" class="project-link">View project ↗</a>
+        </article>
+
+        <article class="project-card project-extra">
+          <div class="project-meta">
+            <span class="project-tag">Mobile · Android</span>
+          </div>
+          <h3 class="project-title">Buzz Movie Selector</h3>
+          <p class="project-desc">
+            A movie search and rating app for Georgia Tech students to find nearby theaters,
+            share recommendations, and comment on movies they've seen.
+          </p>
+          <div class="project-stack">
+            <span>Android Studio</span><span>Rotten Tomatoes API</span><span>Google Places API</span>
+          </div>
+          <a href="https://github.com/PolkaDot/PolkaDotMovies" target="_blank" class="project-link">View project ↗</a>
+        </article>
+
+      </div>
+
+      <div class="projects-toggle-wrap">
+        <button class="btn-toggle-projects" id="toggle-projects" onclick="toggleProjects()">
+          Show more projects <span id="toggle-arrow">↓</span>
+        </button>
       </div>
     </div>
   </section>
@@ -293,26 +400,16 @@
 
       <div class="timeline">
 
-        <!-- ✏️ UPDATE: Replace with your real experience (most recent first) -->
-
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Software Engineer — AI/NLP</h3>
-                <!-- ✏️ UPDATE: Company name & link -->
-                <a href="https://company.com" target="_blank" class="timeline-company">Acme AI Corp ↗</a>
+                <h3 class="timeline-role">Software Engineer 2</h3>
+                <a href="https://microsoft.com" target="_blank" class="timeline-company">Microsoft ↗</a>
               </div>
-              <!-- ✏️ UPDATE: Dates -->
-              <span class="timeline-period">2023 — Present</span>
+              <span class="timeline-period">Oct 2021 — Oct 2025</span>
             </div>
-            <!-- ✏️ UPDATE: Your bullet points -->
-            <ul class="timeline-bullets">
-              <li>Led development of a production RAG system processing 2M+ documents daily.</li>
-              <li>Fine-tuned and evaluated multiple LLMs for domain-specific tasks using RLHF and DPO.</li>
-              <li>Collaborated with product and research teams to ship NLP features to 100k+ users.</li>
-            </ul>
           </div>
         </div>
 
@@ -321,17 +418,11 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">NLP Engineer</h3>
-                <!-- ✏️ UPDATE: Company name & link -->
-                <a href="https://company.com" target="_blank" class="timeline-company">Startup XYZ ↗</a>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <a href="https://aws.amazon.com" target="_blank" class="timeline-company">Amazon Web Services ↗</a>
               </div>
-              <span class="timeline-period">2021 — 2023</span>
+              <span class="timeline-period">Mar 2020 — Jun 2021</span>
             </div>
-            <ul class="timeline-bullets">
-              <li>Built a multilingual text classification system achieving 91% F1 across 8 languages.</li>
-              <li>Designed and maintained the model evaluation pipeline and CI/CD for ML workflows.</li>
-              <li>Contributed to open-source NLP tooling with 400+ GitHub stars.</li>
-            </ul>
           </div>
         </div>
 
@@ -340,33 +431,81 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Research Intern — NLP</h3>
-                <!-- ✏️ UPDATE: University / lab -->
-                <a href="https://university.edu" target="_blank" class="timeline-company">University Research Lab ↗</a>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <a href="https://ibm.com" target="_blank" class="timeline-company">IBM ↗</a>
               </div>
-              <span class="timeline-period">Summer 2021</span>
+              <span class="timeline-period">Feb 2019 — Feb 2020</span>
             </div>
-            <ul class="timeline-bullets">
-              <li>Investigated few-shot prompting strategies on low-resource languages.</li>
-              <li>Co-authored a paper submitted to ACL 2022 on cross-lingual transfer learning.</li>
-            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <a href="https://manh.com" target="_blank" class="timeline-company">Manhattan Associates ↗</a>
+              </div>
+              <span class="timeline-period">Jun 2018 — Feb 2019</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI/ML Intern</h3>
+                <a href="https://gapac.com" target="_blank" class="timeline-company">Georgia-Pacific ↗</a>
+              </div>
+              <span class="timeline-period">Jan 2018 — Mar 2018</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI/ML Intern</h3>
+                <a href="https://siemens.com" target="_blank" class="timeline-company">Siemens ↗</a>
+              </div>
+              <span class="timeline-period">May 2017 — Aug 2017</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analyst Intern</h3>
+                <a href="https://kikcorp.com" target="_blank" class="timeline-company">Kik Custom Products ↗</a>
+              </div>
+              <span class="timeline-period">May 2016 — Aug 2016</span>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <!-- ✏️ UPDATE: Your education -->
       <div class="education-block">
-        <span class="section-tag" style="margin-bottom: 1.5rem; display: inline-block;">Education</span>
+        <span class="section-tag" style="margin-bottom: 1.5rem; display: inline-block;">Education & Certifications</span>
         <div class="edu-row">
           <div class="edu-item">
-            <p class="edu-degree">B.S. Computer Science</p>
-            <!-- ✏️ UPDATE: Your university & year -->
-            <p class="edu-school">Your University, 2021</p>
+            <p class="edu-degree">B.S. in Computer Science</p>
+            <p class="edu-school">Georgia Institute of Technology, 2018</p>
           </div>
-          <!-- ✏️ UPDATE: Add more education or certifications or remove -->
           <div class="edu-item">
-            <p class="edu-degree">Deep Learning Specialization</p>
+            <p class="edu-degree">Neural Networks and Deep Learning</p>
+            <p class="edu-school">Coursera / DeepLearning.AI</p>
+          </div>
+          <div class="edu-item">
+            <p class="edu-degree">Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</p>
             <p class="edu-school">Coursera / DeepLearning.AI</p>
           </div>
         </div>
@@ -383,9 +522,9 @@
     <!-- ✏️ UPDATE: Your name & links -->
     <p class="footer-text">Designed & built by <span class="accent">Esha</span></p>
     <div class="footer-links">
-      <a href="mailto:esha@example.com">Email</a>
-      <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn</a>
+      <a href="mailto:singhesha116@gmail.com">Email</a>
+      <a href="https://github.com/esingh7" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/eshasingh150" target="_blank">LinkedIn</a>
     </div>
   </footer>
 
