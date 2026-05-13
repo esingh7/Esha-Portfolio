@@ -85,19 +85,21 @@
             <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
             <span class="terminal-title">nlp_pipeline.py</span>
           </div>
-          <pre class="terminal-code"><span class="t-purple">from</span> transformers <span class="t-purple">import</span> AutoModel
-<span class="t-purple">import</span> torch
+<pre class="terminal-code"><span class="t-purple">import</span> openai, google.generativeai <span class="t-purple">as</span> genai
 
-<span class="t-comment"># ✏️ update with your stack</span>
-model = AutoModel.from_pretrained(
-    <span class="t-green">"esha/fine-tuned-llm"</span>
+<span class="t-comment"># OpenAI</span>
+oai = openai.OpenAI()
+oai.chat.completions.create(
+    model=<span class="t-green">"gpt-4o"</span>,
+    messages=messages,
 )
 
-outputs = model.generate(
-    input_ids,
-    max_new_tokens=<span class="t-amber">512</span>,
-    temperature=<span class="t-amber">0.7</span>,
+<span class="t-comment"># Gemini</span>
+genai.configure(api_key=API_KEY)
+model = genai.GenerativeModel(
+    <span class="t-green">"gemini-1.5-pro"</span>
 )
+model.generate_content(prompt)</pre>
 <span class="t-comment"># → deployed at scale ✓</span></pre>
         </div>
       </div>
